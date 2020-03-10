@@ -1,4 +1,4 @@
-# RxjsDemo
+# NgRxjsDemo
 ## 说明
 - 学习rxjs的一些demo
 

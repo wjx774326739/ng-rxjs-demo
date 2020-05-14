@@ -1,6 +1,12 @@
-<div>
-  <a *ngFor="let menuItem of menuList" [routerLink]="menuItem.url">{{menuItem.name}}</a>
+<div class="container">
+  <div>
+    <a *ngFor="let menuItem of menuList" [routerLink]="menuItem.url">{{menuItem.name}}</a>
+  </div>
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>
-<div>
-  <router-outlet></router-outlet>
+<div class="container">
+  <button (click)="onClearLogs()">清除日志</button>
+  <div *ngFor="let item of logs">{{item}}</div>
 </div>

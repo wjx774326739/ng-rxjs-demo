@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { LogService } from './log.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -13,4 +15,17 @@ export class AppComponent {
       url: '/of'
     }
   ];
+
+  logs: string[] = [];
+
+  constructor(
+    private logSer: LogService,
+  ) {
+    this.logSer.subscribeLog().subscribe(log => this.logs.push(log));
+  }
+
+  onClearLogs(): void {
+    this.logs = [];
+  }
+
 }

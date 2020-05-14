@@ -19,3 +19,7 @@
 - 如果是Observable,会将接收到的流重新以流的形式发送出去
 - 值全部发送之后，自动complete结束。如果是Observable，需要等到该Observable发出complete之后，from操作符才会complete结束,或者手动取消订阅
 - 因此数组、Promise、迭代器下可以不用手动取消订阅，Observable视情况而定
+
+## fromEvent操作符
+- 可以监听dom元素的event事件，比如click等。每次事件触发以流的形式发出值；
+- 组件销毁时不会自动取消订阅，需要手动取消订阅；

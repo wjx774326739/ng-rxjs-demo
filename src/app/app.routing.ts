@@ -14,6 +14,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/from/from.module').then(m => m.FromModule)
   },
   {
+    path: 'fromEvent',
+    loadChildren: () => import('./modules/fromEvent/fromEvent.module').then(m => m.FromEventModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

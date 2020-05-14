@@ -17,6 +17,10 @@ export class AppComponent {
     {
       name: 'from',
       url: '/from'
+    },
+    {
+      name: 'fromEvent',
+      url: '/fromEvent'
     }
   ];
 

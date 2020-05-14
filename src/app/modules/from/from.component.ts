@@ -50,7 +50,6 @@ export class FromComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-
     this.logSer.publishLog(
       '这是在FromComponent中，组件销毁时记录的日志。此时From操作符的订阅事件的状态为:closed - '
       + this.from$Index.closed

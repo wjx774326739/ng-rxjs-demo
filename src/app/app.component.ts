@@ -13,6 +13,10 @@ export class AppComponent {
     {
       name: 'of',
       url: '/of'
+    },
+    {
+      name: 'from',
+      url: '/from'
     }
   ];
 

@@ -10,6 +10,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/of/of.module').then(m => m.OfModule)
   },
   {
+    path: 'from',
+    loadChildren: () => import('./modules/from/from.module').then(m => m.FromModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

@@ -18,6 +18,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/fromEvent/fromEvent.module').then(m => m.FromEventModule)
   },
   {
+    path: 'switchMap',
+    loadChildren: () => import('./modules/switchMap/switchMap.module').then(m => m.SwitchMapModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

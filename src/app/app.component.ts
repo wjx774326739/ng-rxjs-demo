@@ -21,7 +21,11 @@ export class AppComponent {
     {
       name: 'fromEvent',
       url: '/fromEvent'
-    }
+    },
+    {
+      name: 'switchMap',
+      url: '/switchMap'
+    },
   ];
 
   logs: string[] = [];

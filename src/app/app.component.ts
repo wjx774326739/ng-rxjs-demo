@@ -37,7 +37,11 @@ export class AppComponent {
     {
       name: 'takeUntil',
       url: '/takeUntil'
-    }
+    },
+    {
+      name: 'map',
+      url: '/map'
+    },
   ];
 
   logs: string[] = [];

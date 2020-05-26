@@ -39,6 +39,7 @@ export class TakeUntilComponent implements OnInit, OnDestroy {
       () => { },
       () => {
         console.log('complete');
+        this.logSer.publishLog('TakeUntilComponent记录takeUntil的日志.此时接收到complete事件');
       }
     );
 

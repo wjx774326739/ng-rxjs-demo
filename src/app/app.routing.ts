@@ -34,6 +34,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/takeUntil/takeUntil.module').then(m => m.TakeUntilModule)
   },
   {
+    path: 'map',
+    loadChildren: () => import('./modules/map/map.module').then(m => m.MapModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

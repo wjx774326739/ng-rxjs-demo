@@ -30,6 +30,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/debounceTime/debounceTime.module').then(m => m.DebounceTimeModule)
   },
   {
+    path: 'takeUntil',
+    loadChildren: () => import('./modules/takeUntil/takeUntil.module').then(m => m.TakeUntilModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

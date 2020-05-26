@@ -32,7 +32,11 @@ export class AppComponent {
     },
     {
       name: 'debounceTime',
-      url: 'debounceTime'
+      url: '/debounceTime'
+    },
+    {
+      name: 'takeUntil',
+      url: '/takeUntil'
     }
   ];
 

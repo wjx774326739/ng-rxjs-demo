@@ -9,6 +9,9 @@
         "@schematics/angular:component": {
           "styleext": "scss",
           "spec": false
+        },
+        "@schematics/angular:module": {
+          "routing": true
         }
       },
       "root": "",

@@ -26,6 +26,10 @@ export class AppComponent {
       name: 'switchMap',
       url: '/switchMap'
     },
+    {
+      name: 'auditTime',
+      url: '/auditTime'
+    },
   ];
 
   logs: string[] = [];

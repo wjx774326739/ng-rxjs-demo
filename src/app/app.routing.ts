@@ -22,6 +22,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/switchMap/switchMap.module').then(m => m.SwitchMapModule)
   },
   {
+    path: 'auditTime',
+    loadChildren: () => import('./modules/auditTime/auditTime.module').then(m => m.AuditTimeModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

@@ -37,7 +37,19 @@ export class AppComponent {
     {
       name: 'takeUntil',
       url: '/takeUntil'
-    }
+    },
+    {
+      name: 'map',
+      url: '/map'
+    },
+    {
+      name: 'observable',
+      url: '/observable'
+    },
+    {
+      name: 'distinctUntilChanged',
+      url: '/distinctUntilChanged'
+    },
   ];
 
   logs: string[] = [];

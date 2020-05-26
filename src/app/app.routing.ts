@@ -26,6 +26,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/auditTime/auditTime.module').then(m => m.AuditTimeModule)
   },
   {
+    path: 'debounceTime',
+    loadChildren: () => import('./modules/debounceTime/debounceTime.module').then(m => m.DebounceTimeModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

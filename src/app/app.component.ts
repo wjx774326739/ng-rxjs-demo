@@ -30,6 +30,10 @@ export class AppComponent {
       name: 'auditTime',
       url: '/auditTime'
     },
+    {
+      name: 'debounceTime',
+      url: 'debounceTime'
+    }
   ];
 
   logs: string[] = [];

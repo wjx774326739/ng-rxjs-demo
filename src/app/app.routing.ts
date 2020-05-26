@@ -38,6 +38,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/map/map.module').then(m => m.MapModule)
   },
   {
+    path: 'observable',
+    loadChildren: () => import('./modules/observable/observable.module').then(m => m.ObservableModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

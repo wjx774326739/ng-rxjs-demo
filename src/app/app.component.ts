@@ -42,6 +42,10 @@ export class AppComponent {
       name: 'map',
       url: '/map'
     },
+    {
+      name: 'observable',
+      url: '/observable'
+    }
   ];
 
   logs: string[] = [];

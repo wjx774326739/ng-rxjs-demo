@@ -45,7 +45,11 @@ export class AppComponent {
     {
       name: 'observable',
       url: '/observable'
-    }
+    },
+    {
+      name: 'distinctUntilChanged',
+      url: '/distinctUntilChanged'
+    },
   ];
 
   logs: string[] = [];

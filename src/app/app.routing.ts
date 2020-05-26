@@ -42,6 +42,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/observable/observable.module').then(m => m.ObservableModule)
   },
   {
+    path: 'distinctUntilChanged',
+    loadChildren: () => import('./modules/distinctUntilChanged/distinctUntilChanged.module').then(m => m.DistinctUntilChangedModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

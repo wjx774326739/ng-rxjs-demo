@@ -50,6 +50,10 @@ export class AppComponent {
       name: 'distinctUntilChanged',
       url: '/distinctUntilChanged'
     },
+    {
+      name: 'merge',
+      url: '/merge'
+    },
   ];
 
   logs: string[] = [];

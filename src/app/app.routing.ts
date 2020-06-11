@@ -46,6 +46,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/distinctUntilChanged/distinctUntilChanged.module').then(m => m.DistinctUntilChangedModule)
   },
   {
+    path: 'merge',
+    loadChildren: () => import('./modules/merge/merge.module').then(m => m.MergeModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

@@ -54,6 +54,10 @@ export class AppComponent {
       name: 'merge',
       url: '/merge'
     },
+    {
+      name: 'mergeAll',
+      url: '/mergeAll'
+    },
   ];
 
   logs: string[] = [];

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 
 import { LogService } from './log.service';
+import { Menus } from './mocks/menus';
 
 @Component({
   selector: 'app-root',
@@ -8,57 +9,10 @@ import { LogService } from './log.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'rxjs-demo';
-  menuList = [
-    {
-      name: 'of',
-      url: '/of'
-    },
-    {
-      name: 'from',
-      url: '/from'
-    },
-    {
-      name: 'fromEvent',
-      url: '/fromEvent'
-    },
-    {
-      name: 'switchMap',
-      url: '/switchMap'
-    },
-    {
-      name: 'auditTime',
-      url: '/auditTime'
-    },
-    {
-      name: 'debounceTime',
-      url: '/debounceTime'
-    },
-    {
-      name: 'takeUntil',
-      url: '/takeUntil'
-    },
-    {
-      name: 'map',
-      url: '/map'
-    },
-    {
-      name: 'observable',
-      url: '/observable'
-    },
-    {
-      name: 'distinctUntilChanged',
-      url: '/distinctUntilChanged'
-    },
-    {
-      name: 'merge',
-      url: '/merge'
-    },
-    {
-      name: 'mergeAll',
-      url: '/mergeAll'
-    },
-  ];
+
+  menuList = Menus;
 
   logs: string[] = [];
 

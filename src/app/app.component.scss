@@ -4,9 +4,12 @@
 
 .container {
   flex: 1 1 50%;
+  min-width: 50%;
 }
 
 .menu-list {
+  word-break: break-all;
+
   a {
     margin: 0 3px;
   }

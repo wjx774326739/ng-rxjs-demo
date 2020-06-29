@@ -54,6 +54,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/mergeAll/mergeAll.module').then(m => m.MergeAllModule)
   },
   {
+    path: 'mergeMap',
+    loadChildren: () => import('./modules/mergeMap/mergeMap.module').then(m => m.MergeMapModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

@@ -67,3 +67,6 @@
 
 ## mergeAll操作符
 - 能够将二维可观察对象转成一维的可观察对象，并且能够同时处理所有的可观察对象；
+
+## mergeMap操作符
+- mergeMap = map()+mergeAll()。即原来分开需要写map和mergeAll两个操作符的效果，现在只需要写一个mergeMap就行

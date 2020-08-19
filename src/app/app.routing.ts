@@ -58,6 +58,10 @@ const routes: Routes = [
     loadChildren: () => import('./modules/mergeMap/mergeMap.module').then(m => m.MergeMapModule)
   },
   {
+    path: 'interval',
+    loadChildren: () => import('./modules/interval/interval.module').then(m => m.IntervalModule)
+  },
+  {
     path: '',
     redirectTo: 'of',
     pathMatch: 'full'

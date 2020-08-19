@@ -70,3 +70,8 @@
 
 ## mergeMap操作符
 - mergeMap = map()+mergeAll()。即原来分开需要写map和mergeAll两个操作符的效果，现在只需要写一个mergeMap就行
+
+## interval 操作符
+- 每隔一段时间发送出一个值;
+- 类似于window.setInterval，但是这个需要订阅后才会开始每隔一段时间发送出一个值。而window.setInterval是定义了，执行到了就会开始执行
+- 需要手动取消订阅

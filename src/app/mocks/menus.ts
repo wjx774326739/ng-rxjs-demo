@@ -50,5 +50,9 @@ export const Menus = [
   {
     name: 'mergeMap',
     url: '/mergeMap'
+  },
+  {
+    name: 'interval',
+    url: '/interval'
   }
 ];
